@@ -1,0 +1,1 @@
+{"version":3,"sources":["/home/ubuntu/workspace/sandbox/eddevs/src/components/AppBadgeLink/AppBadgeLink.sass"],"names":[],"mappings":"AACA,oCAEI,eAAgB,CAEpB,mBACI,aAAA,CACA,cAAe","file":"5.8c3bf2ab.chunk.css","sourcesContent":["\n.google-play-badge,\n.apple-app-badge {\n    max-width: 200px; }\n\n.legal-attribution {\n    display: block;\n    font-size: 13px; }\n"]}
