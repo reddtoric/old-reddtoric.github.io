@@ -17,7 +17,7 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "^2.1.8"
   },
-  "homepage": "https:eddevs.com",
+  "homepage": "https://eddevs.com",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
