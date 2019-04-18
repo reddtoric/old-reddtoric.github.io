@@ -1,0 +1,67 @@
+@import 'styles/theme.sass'
+
+.fancy-link
+    display: inline-block
+    height: 20px
+    padding: 4px 18px 22px
+    margin-right: 8px
+    margin-bottom: 14px
+    color: $fontColor
+    fill: $fontColor
+    text-decoration: none
+    background-color: $colorPrimary
+    border-radius: 4px
+    box-shadow: 0 6px 1px $colorBoxShadow
+    &:hover
+        background-color: $colorPrimaryDarker
+        box-shadow: 0 4px 1px $colorBoxShadow
+        transform: translateY(2px)
+    &:active
+        box-shadow: 0 2px 1px $colorBoxShadow
+        transform: translateY(4px)
+        
+
+    
+    
+//=========== specials ===============
+
+.fancy-link-icon
+    height: 18px
+    margin-right: 4px
+    vertical-align: text-top
+
+//.fancy-link-text
+    
+
+//github purple
+$colorPrimary-github: #6e5494
+$colorPrimaryDarker-github: #634b85
+$colorBoxShadow-github: #423258
+
+//playstore
+$colorPrimary-playstore: #689f38
+$colorPrimaryDarker-playstore: #8bc34a
+$colorBoxShadow-playstore: #4C7429
+
+//appstore
+
+//github
+.fancy-link-github    
+    background-color: $colorPrimary-github
+    box-shadow: 0 6px 1px $colorBoxShadow-github
+    &:hover
+        background-color: $colorPrimaryDarker-github
+        box-shadow: 0 4px 1px $colorBoxShadow-github
+    &:active
+        box-shadow: 0 2px 1px $colorBoxShadow-github
+  
+//playstore    
+.fancy-link-playstore
+    background-color: $colorPrimary-playstore
+    box-shadow: 0 6px 1px $colorBoxShadow-playstore
+    &:hover
+        background-color: $colorPrimaryDarker-playstore
+        box-shadow: 0 4px 1px $colorBoxShadow-playstore
+    &:active
+        box-shadow: 0 2px 1px $colorBoxShadow-playstore
+        
