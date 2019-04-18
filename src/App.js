@@ -110,7 +110,7 @@ export default class App extends Component {
                 <Route 
                   key={page.id}
                   exact
-                  path={page.path}
+                  path={`${process.env.PUBLIC_URL}${page.path}`}
                   component={page.component}
                 />
               ))}
