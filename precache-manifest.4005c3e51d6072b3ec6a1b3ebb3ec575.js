@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "eddevs.com/static/css/3.a841bb90.chunk.css"
   },
   {
-    "revision": "8e67f04ed68164cc3880dfb1992a3dc5",
+    "revision": "6d734abe356c841eb02df9b9faaf2dd9",
     "url": "eddevs.com/index.html"
   }
 ];
