@@ -16,7 +16,7 @@ const projects = [
             href: "https:github.com/reddtoric/reddtoric.github.io"
           }
         },
-        summary: "Project that showcases my past and current projects. Built using React. I'm still learning JS and React, and is look for challenges and opportunities to grow."
+        summary: "Project that showcases my past and current projects. Built using React. I'm still learning JS and React, and is looking for challenges and opportunities to grow."
     },
     {
         id: 1,
@@ -29,7 +29,7 @@ const projects = [
                 href: "https://play.google.com/store/apps/details?id=com.eddevs.disorientis"
             }
         },
-        summary: "An indie project started in April 2017, Disorientis is a single-player high-score mobile arcade game with an unusual control pad and constant random directional changes. Developed with Unity using C#."
+        summary: "An indie project started in April 2017, Disorientis is a single-player high-score mobile arcade game with an unusual control pad and constant random directional changes. Developed in Unity using C#."
     },
     {
         id: 2,
