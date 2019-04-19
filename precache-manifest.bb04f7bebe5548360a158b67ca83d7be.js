@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/static/css/main.db58a94c.chunk.css"
   },
   {
-    "revision": "1fb7053b556c47de78c6",
-    "url": "/static/js/runtime~main.738cfdfd.js"
+    "revision": "8f80b38d7b15b59a27f0",
+    "url": "/static/js/runtime~main.c44e5643.js"
   },
   {
     "revision": "40f1f90b35d1bfab566b",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/static/media/candy-crush.d1462159.png"
   },
   {
-    "revision": "cdc9203505e053f2d162",
-    "url": "/static/js/3.0ac469c4.chunk.js"
+    "revision": "31c6dc9a4dc0a7db30a4",
+    "url": "/static/js/3.2a1341f4.chunk.js"
   },
   {
     "revision": "c3517ad786a71fd13198546f205a3c41",
@@ -52,11 +52,11 @@ self.__precacheManifest = [
     "url": "/static/css/4.f8108090.chunk.css"
   },
   {
-    "revision": "cdc9203505e053f2d162",
+    "revision": "31c6dc9a4dc0a7db30a4",
     "url": "/static/css/3.a841bb90.chunk.css"
   },
   {
-    "revision": "617e7548c31d6051b4f76b40a0b14565",
+    "revision": "a5420b2ae24348601a56326b0091a532",
     "url": "/index.html"
   }
 ];
