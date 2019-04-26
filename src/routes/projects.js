@@ -2,8 +2,6 @@ import React from 'react';
 
 //tmp
 import ProjectCard from 'components/ProjectCard';
-import disorientis_banner_no_title from '../imgs/disorientis-banner-no-title.png';
-import candy_crush from '../imgs/candy-crush.png';
 
 
 const projects = [
@@ -21,7 +19,7 @@ const projects = [
     {
         id: 1,
         title: "Disorientis",
-        image: disorientis_banner_no_title,
+        image: "https://eddevs.com/imgs/disorientis-banner-no-title.png",
         links: {
             more: "/projects/disorientis",
             playstore: {
@@ -45,7 +43,7 @@ const projects = [
     {
         id: 3,
         title: "Candy Crush",
-        image: candy_crush,
+        image: "https://eddevs.com/imgs/candy-crush.png",
         links: {
             github: {
                 newTab: true,
