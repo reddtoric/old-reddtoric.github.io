@@ -9,7 +9,6 @@ import {
   Switch
 } from 'react-router-dom';
 
-
 //components
 import Nav, { NavToggle } from "components/Nav";
 
@@ -26,30 +25,30 @@ const ComingSoonPage = lazy(() => import('./routes/comingsoon.js'));
 
 
 const pages = [
-    {
-        id: 0,
-        showInNav: true,
-        path: "/",
-        name: "About",
-        component: IndexPage
-    },{
-        id: 1,
-        showInNav: true,
-        path: "/projects",
-        name: "Projects",
-        component: ProjectsPage
-    },{
-        id: 2,
-        path: "/blog",
-        name: "Blog",
-        component: ComingSoonPage
-    },{
-        id: 3,
-        path: "/projects/disorientis",
-        name: "Disorentis",
-        component: DisorientisPage
-    }
-]
+  {
+    id: 0,
+    showInNav: true,
+    path: "/",
+    name: "About",
+    component: IndexPage
+  },{
+    id: 1,
+    showInNav: true,
+    path: "/projects",
+    name: "Projects",
+    component: ProjectsPage
+  },{
+    id: 2,
+    path: "/blog",
+    name: "Blog",
+    component: ComingSoonPage
+  },{
+    id: 3,
+    path: "/projects/disorientis",
+    name: "Disorentis",
+    component: DisorientisPage
+  }
+];
 
 // eslint-disable-next-line
 {/*
@@ -104,7 +103,7 @@ export default class App extends Component {
           <NavToggle showNav={this.state.showNav} handleClick={this.toggleNav} />
           <Nav showNav={this.state.showNav} pages={pages} handleClick={this.closeNav} />
           
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<main>Loading...</main>}>
             <Switch>
               {pages.map(page => (
                 <Route 
