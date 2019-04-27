@@ -11,7 +11,7 @@ const projects = [
         links: {
           github: {
             newTab: true,
-            href: "https:github.com/reddtoric/reddtoric.github.io"
+            href: "https://github.com/reddtoric/reddtoric.github.io"
           }
         },
         summary: "Project that showcases my past and current projects. Built using React. I'm still learning JS and React, and is looking for challenges and opportunities to grow."
