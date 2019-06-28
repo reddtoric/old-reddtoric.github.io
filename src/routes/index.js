@@ -22,7 +22,7 @@ export default () => (
         I love a good puzzle and challenge. Learned how to solve the Rubik's cube and several puzzles alike back in 6<sup>th</sup> grade. Learned how to ride a unicycle in less than 3 weeks.
       </p>
       <p>
-        I created a wacky android game called Disorientis. Although much work is needed, the core mechanics is there. <Link to="/projects/disorientis">Read more...</Link>
+        I created a wacky android game called Disorientis. Although much work is needed, the core mechanics is there. Working on version 2. <Link to="/projects/disorientis">Read more...</Link>
       </p>
       <AppBadgeLink type="playstore" href="https://play.google.com/store/apps/details?id=com.eddevs.disorientis&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" />
       
