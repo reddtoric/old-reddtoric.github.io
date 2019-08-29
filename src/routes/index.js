@@ -16,13 +16,13 @@ export default () => (
       <h1 className="hidden">About</h1>
       
       <p>
-        Hi there! My name is Edward. A graduate of University of Illinois at Chicago with a BS in Computer Science. <b>I am looking for opportunities in JS and React development.</b>
+        Hi there! My name is Edward. Graduated from University of Illinois at Chicago with a BS in Computer Science. <b>I am looking for opportunities in software development.</b>
       </p>
       <p>
         I love a good puzzle and challenge. Learned how to solve the Rubik's cube and several puzzles alike back in 6<sup>th</sup> grade. Learned how to ride a unicycle in less than 3 weeks.
       </p>
       <p>
-        I created a wacky android game called Disorientis. Although much work is needed, the core mechanics is there. Working on version 2. <Link to="/projects/disorientis">Read more...</Link>
+        I created a wacky android game called Disorientis. I'm working on version 2 which will look and perform better. <Link to="/projects/disorientis">Read more...</Link>
       </p>
       <AppBadgeLink type="playstore" href="https://play.google.com/store/apps/details?id=com.eddevs.disorientis&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" />
       
