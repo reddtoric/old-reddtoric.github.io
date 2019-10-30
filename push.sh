@@ -15,7 +15,7 @@ REPO=reddtoric.github.io
 Title(){
 	echo ""
 	echo " +----------------+"
-	echo " | PUSHING TO ... |"
+	echo " | PUSHING TO ... |" git branch
 	echo " +----------------+"
 }
 
