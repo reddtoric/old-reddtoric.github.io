@@ -22,8 +22,9 @@ GitBranch(){
 
 GitAdd(){
 	echo ""
-	echo "------------------------------"
-	echo ">>>  GIT ADD . --VERBOSE"
+	echo " +---------------------+"
+	echo " | GIT ADD . --VERBOSE |"
+	echo " +---------------------+"
 	git add . -v
 }
 
