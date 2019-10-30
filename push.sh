@@ -14,7 +14,7 @@ REPO=reddtoric.github.io
 # Functinos:
 Hr(){
 	printf "\n"
-	for ((i=0; i<60; i++))
+	for i in {1..60}
 	do
 		printf -- "-%.0s"
 	done
