@@ -73,6 +73,7 @@ Repeater(){
 }
 
 Info(){
+	Title "INFO"
 	echo "Username: ${USERNAME}"
 	echo "Repo: ${REPO}"
 }
@@ -135,6 +136,7 @@ ConfirmPush(){
 
 # Main
 Info
+Hr
 GitBranch
 Hr
 GitAdd
