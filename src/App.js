@@ -49,7 +49,9 @@ const pages = [
     component: DisorientisPage
   },{
 	id: 4,
-	path: "/resume/",
+    showInNav: true,
+	external: true,
+	path: "https://eddevs.com/resume",
 	name: "Resume",
 	component: ComingSoonPage
   }
@@ -110,14 +112,24 @@ export default class App extends Component {
           
           <Suspense fallback={<main>Loading...</main>}>
             <Switch>
-              {pages.map(page => (
-                <Route 
+              {pages.map(page => {
+			    if (page.external){
+				  return <Route 
+                    key={page.id}
+				    component={() => {
+					  window.location.href = `${page.path}`;
+					  return null;
+				    }}
+                  />
+                }
+			  
+			    return <Route 
                   key={page.id}
                   exact
                   path={`${process.env.PUBLIC_URL}${page.path}`}
                   component={page.component}
                 />
-              ))}
+			  })}
               <Route component={NotFoundPage} />
             </Switch>
           </Suspense>

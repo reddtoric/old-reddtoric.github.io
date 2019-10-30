@@ -54,8 +54,9 @@ export default () => (
       </ul>
     </section>
 	
+	{/*
 	<section>
-		<h4 id="#adsettings">Ad settings</h4>
+		<h4 id="adsettings">Ad settings</h4>
 		<p>Admob and Unity Ads were used in the app and these are the settings applied.</p>
 		<p>AdMob:
 			<ul>
@@ -92,5 +93,6 @@ export default () => (
 			</ul>
 		</p>
 	</section>
+	*/}
   </main>
 )
