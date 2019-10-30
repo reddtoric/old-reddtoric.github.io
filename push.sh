@@ -18,7 +18,7 @@ Hr(){
 	do
 		printf -- "-%.0s"
 	done
-	printf "\n"
+	printf "\n\n"
 }
 
 Title(){
