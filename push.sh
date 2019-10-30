@@ -79,7 +79,6 @@ Info(){
 }
 
 GitBranch(){
-	echo ""
 	Title "PUSHING TO ..."
 	git branch
 }
