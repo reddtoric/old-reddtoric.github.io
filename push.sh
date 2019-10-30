@@ -37,6 +37,7 @@ Title2(){
 	then
 		TitleBar length
 		printf " | ${1} |\n"
+		Repeater "a" 3
 		printf " | ${2} |\n"
 		TitleBar length
 
@@ -59,6 +60,12 @@ TitleBar(){
 	echo "-+"
 }
 
+Repeater(){
+	for ((i=0; i<${2}; i++))
+	do
+		printf -- "${1}%.0s"
+	done
+}
 
 GitBranch(){
 	echo ""
