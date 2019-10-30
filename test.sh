@@ -15,4 +15,23 @@ ContinueToPush(){
 	fi
 }
 
-ContinueToPush
+Title(){
+	TITLE_LENGTH=${#1}
+	
+	Bar TITLE_LENGTH
+	echo " | ${1} |"
+	Bar TITLE_LENGTH
+}
+
+Bar(){
+	printf " +-"
+	
+	for ((i=0; i<${1}; i++))
+	do
+		printf -- "-%.0s"
+	done
+	
+	echo "-+"
+}
+
+Title "GIT ADD . --VERBOSE"

@@ -1,68 +1,81 @@
 #!/bin/bash
 # if permission change needed: chmod 0755 <scriptname>.sh
 
-# examples: 
+# Examples: 
 #   $ ./push.sh
 #   $ ./push.sh custom commit msg
 #   $ ./push.sh updated README.md
 
-# variables:
+# Variables:
 USERNAME=reddtoric
 REPO=reddtoric.github.io
 
 
-# functinos:
-GitBranch(){
-	echo ""
-	echo " +----------------+"
-	echo " | PUSHING TO ... |"
-	echo " +----------------+"
-	git branch
+# Functinos:
+Hr(){
 	echo ""
 	echo "------------------------------"
+	echo ""
+}
+
+Title(){
+	length=${#1}
+	
+	TitleBar length
+	echo " | ${1} |"
+	TitleBar length
+}
+
+TitleBar(){
+	printf " +-"
+	
+	for ((i=0; i<${1}; i++))
+	do
+		printf -- "-%.0s"
+	done
+	
+	echo "-+"
+}
+
+
+GitBranch(){
+	echo ""
+	Title "PUSHING TO ..."
+	git branch
 }
 
 GitAdd(){
-	echo ""
-	echo " +---------------------+"
-	echo " | GIT ADD . --VERBOSE |"
-	echo " +---------------------+"
+	Title "GIT ADD . --VERBOSE"
 	git add . -v
 }
 
 GitStatus(){
-	echo ""
-	echo "------------------------------"
-	echo ">>>  GIT STATUS"
+	Title "GIT STATUS"
 	git status
 }
 
 GitCommit(){
-	echo ""
-	echo "------------------------------"
 	#if no custom one received from cmdline argument, use default commit msg 
 	if [ "$#" -eq 0 ]
 	then
-		echo ">>>  GIT COMMIT -M 'UPDATE'"
+		Title "GIT COMMIT -M 'UPDATE'"
 		git commit -m "update"
 		
 	#else use the custom commit msg from cmdline argument
 	elif [ "$#" -gt 0 ]
 	then
-		echo ">>>  GIT COMMIT -M '"$*"'"
+		Title "GIT COMMIT -M '"$*"'"
 		git commit -m "$*"
 	fi
 }
 
 GitPush(){
-	echo ""
-	echo "------------------------------"
-	echo ">>> GIT PUSH --REPO https://$USERNAME@github.com/$USERNAME/$REPO.git"
+	Title "GIT PUSH --REPO https://$USERNAME@github.com/$USERNAME/$REPO.git"
 	git push --repo https://$USERNAME@github.com/$USERNAME/$REPO.git
 }
 
 ConfirmPush(){
-	echo ">>> Continue to push? y or n"
+	Title "Continue to push? y or n"
 
 	read TOPUSH
 
@@ -71,14 +84,19 @@ ConfirmPush(){
 	elif [ "$TOPUSH" = "n" ]; then
 		echo ">>> DID NOT PUSH."
 	else
-		echo "Invalid input, please try again."
+		echo ">>> Invalid input, please try again."
 		ConfirmPush
 	fi
 }
 
+
 # Main
 GitBranch
+Hr
 GitAdd
+Hr
 GitStatus
+Hr
 GitCommit
+Hr
 ConfirmPush
