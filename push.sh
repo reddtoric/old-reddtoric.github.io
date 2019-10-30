@@ -13,12 +13,12 @@ REPO=reddtoric.github.io
 
 # Functinos:
 Hr(){
-	echo ""
+	printf "\n"
 	for ((i=0; i<60; i++))
 	do
 		printf -- "-%.0s"
 	done
-	echo ""
+	printf "\n"
 }
 
 Title(){
