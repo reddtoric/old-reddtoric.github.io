@@ -85,7 +85,7 @@ ConfirmPush(){
 	if [ "$TOPUSH" = "y" ]; then
 		GitPush
 	elif [ "$TOPUSH" = "n" ]; then
-		echo ">>> DID NOT PUSH."
+		Title "DID NOT PUSH"
 	else
 		echo ">>> Invalid input, please try again."
 		ConfirmPush
