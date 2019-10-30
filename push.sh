@@ -25,7 +25,7 @@ Title(){
 	length=${#1}
 	
 	TitleBar length
-	printf " | ${1} |"
+	echo " | ${1} |"
 	TitleBar length
 }
 
@@ -36,14 +36,14 @@ Title2(){
 	if [ length -gt length2 ]
 	then
 		TitleBar length
-		printf " | ${1} |"
-		printf " | ${2} |"
+		printf " | ${1} |\n"
+		printf " | ${2} |\n"
 		TitleBar length
 
 	else
 		TitleBar length2
-		printf " | ${1} |"
-		printf " | ${2} |"
+		printf " | ${1} |\n"
+		printf " | ${2} |\n"
 		TitleBar length2
 	fi
 }
