@@ -25,8 +25,27 @@ Title(){
 	length=${#1}
 	
 	TitleBar length
-	echo " | ${1} |"
+	printf " | ${1} |"
 	TitleBar length
+}
+
+Title2(){
+	length=${#1}
+	length2=${#2}
+	
+	if [ length -gt length2 ]
+	then
+		TitleBar length
+		printf " | ${1} |"
+		printf " | ${2} |"
+		TitleBar length
+
+	else
+		TitleBar length2
+		printf " | ${1} |"
+		printf " | ${2} |"
+		TitleBar length2
+	fi
 }
 
 TitleBar(){
@@ -73,8 +92,7 @@ GitCommit(){
 }
 
 GitPush(){
-	Title "GIT PUSH --REPO \n
-	https://$USERNAME@github.com/$USERNAME/$REPO.git"
+	Title2 "GIT PUSH --REPO" "https://$USERNAME@github.com/$USERNAME/$REPO.git"
 	git push --repo https://$USERNAME@github.com/$USERNAME/$REPO.git
 }
 
