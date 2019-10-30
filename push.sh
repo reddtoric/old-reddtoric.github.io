@@ -16,6 +16,7 @@ Title(){
 	echo ""
 	echo " +----------------+"
 	echo " | PUSHING TO ... |" 
+	echo " "
 	git branch
 	echo " +----------------+"
 }
