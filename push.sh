@@ -106,6 +106,7 @@ GitCommit(){
 GitPush(){
 	Title2Rows "GIT PUSH --REPO" "https://$USERNAME@github.com/$USERNAME/$REPO.git"
 	git push --repo https://$USERNAME@github.com/$USERNAME/$REPO.git
+	Title "DONE"
 }
 
 ConfirmPush(){
