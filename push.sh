@@ -1,47 +1,80 @@
 #!/bin/bash
-#if permission change needed: chmod 0755 <scriptname>.sh
+# if permission change needed: chmod 0755 <scriptname>.sh
 
-#examples: 
+# examples: 
 #   $ ./push.sh
 #   $ ./push.sh custom commit msg
 #   $ ./push.sh updated README.md
 
-#variables:
+# variables:
 USERNAME=reddtoric
 REPO=reddtoric.github.io
 
 
-echo ""
-echo " +-------------------+"
-echo " | PUSHING TO MASTER |"
-echo " +-------------------+"
+# functinos:
+Title(){
+	echo ""
+	echo " +-------------------+"
+	echo " | PUSHING TO MASTER |"
+	echo " +-------------------+"
+}
 
-echo ""
-echo "------------------------------"
-echo ">>>  GIT ADD . --VERBOSE"
-git add . -v
+GitAdd(){
+	echo ""
+	echo "------------------------------"
+	echo ">>>  GIT ADD . --VERBOSE"
+	git add . -v
+}
 
-echo ""
-echo "------------------------------"
-echo ">>>  GIT STATUS"
-git status
+GitStatus(){
+	echo ""
+	echo "------------------------------"
+	echo ">>>  GIT STATUS"
+	git status
+}
 
-echo ""
-echo "------------------------------"
-#if no custom one received from cmdline argument, use default commit msg 
-if [ "$#" -eq 0 ]
-then
-    echo ">>>  GIT COMMIT -M 'UPDATE'"
-    git commit -m "update"
-    
-#else use the custom commit msg from cmdline argument
-elif [ "$#" -gt 0 ]
-then
-    echo ">>>  GIT COMMIT -M '"$*"'"
-    git commit -m "$*"
-fi
+GitCommit(){
+	echo ""
+	echo "------------------------------"
+	#if no custom one received from cmdline argument, use default commit msg 
+	if [ "$#" -eq 0 ]
+	then
+		echo ">>>  GIT COMMIT -M 'UPDATE'"
+		git commit -m "update"
+		
+	#else use the custom commit msg from cmdline argument
+	elif [ "$#" -gt 0 ]
+	then
+		echo ">>>  GIT COMMIT -M '"$*"'"
+		git commit -m "$*"
+	fi
+}
 
-echo ""
-echo "------------------------------"
-echo ">>> GIT PUSH --REPO https://$USERNAME@github.com/$USERNAME/$REPO.git"
-git push --repo https://$USERNAME@github.com/$USERNAME/$REPO.git
+GitPush(){
+	echo ""
+	echo "------------------------------"
+	echo ">>> GIT PUSH --REPO https://$USERNAME@github.com/$USERNAME/$REPO.git"
+	git push --repo https://$USERNAME@github.com/$USERNAME/$REPO.git
+}
+
+ConfirmPush(){
+	echo ">>> Continue to push? y or n"
+
+	read TOPUSH
+
+	if [ "$TOPUSH" = "y" ]; then
+		GitPush
+	elif [ "$TOPUSH" = "n" ]; then
+		echo ">>> DID NOT PUSH."
+	else
+		echo "Invalid input, please try again."
+		ConfirmPush
+	fi
+}
+
+# Main
+Title
+GitAdd
+GitStatus
+GitCommit
+ConfirmPush
