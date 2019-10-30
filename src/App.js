@@ -47,6 +47,11 @@ const pages = [
     path: "/projects/disorientis",
     name: "Disorentis",
     component: DisorientisPage
+  },{
+	id: 4,
+	path: "/resume/",
+	name: "Resume",
+	component: ComingSoonPage
   }
 ];
 

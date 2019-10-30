@@ -27,7 +27,7 @@ const projects = [
                 href: "https://play.google.com/store/apps/details?id=com.eddevs.disorientis"
             }
         },
-        summary: "An indie project started in April 2017, Disorientis is a single-player high-score mobile arcade game with an unusual control pad and constant random directional changes. Developed in Unity and C#."
+        summary: "An indie project, Disorientis is a single-player high-score top-down mobile game with a tricky controller. Developed in Unity and C#."
     },
     {
         id: 2,

@@ -9,7 +9,10 @@ export default () => (
     
     <section>
       <h2>Intro</h2>
-      <p>Disorientis is a single-player high score arcade game with an unusual control pad and constant random directional changes.</p>
+      <p>Disorientis is a single-player high-score top-down game. Using a rotary controller, you rotate to the direction you want your character to move towards and collect items and power-ups. The challenge is that the mapping of the 360 degree direction changes every few seconds.</p>
+	  <p>
+	  Will be available on the Apple App Store in the future.
+	  </p>
     </section>
     
     <section>
@@ -50,5 +53,44 @@ export default () => (
         </li>
       </ul>
     </section>
+	
+	<section>
+		<h4 id="#adsettings">Ad settings</h4>
+		<p>Admob and Unity Ads were used in the app and these are the settings applied.</p>
+		<p>AdMob:
+			<ul>
+				<li>
+					All 200 General Categories are allowed.
+				</li>
+				<li>
+					Under Sensitive Categories:
+					<ul>
+						<li>
+							Allowed: Black Magic, Astrology & Esoteric, Downloadable Utilities, Video Games (Casual & Online), and Weight Loss
+						</li>
+						<li>
+							<b>Blocked:</b> Alcohol, Gambling & Betting (18+), Cosmetic Procedures & Body Modification, Dating, Drugs & Supplements, Get Rich Quick, Politics, References to Sex & Sexuality, Religion, Sensationalism, Sexual & Reproductive Health, Significant Skin Exposure, and Social Casino Games
+						</li>
+					</ul>
+				</li>
+				<li>
+					Ad content rated G, PG, and Teens are allowed (except blocked categories).
+				</li>
+			</ul>
+		</p>
+		<p>Unity Ads:
+			<ul>
+				<li>
+					Allowed Categories: Action, Adventure, Arcade, Board, Card, Educational, Family, Music, Puzzle, Racing, Role playing, Simulation, Sports, Strategy, Trivia, Word, Health and Medicine, Health and Fitness Apps, Food, News and Weather, and Personal Finance
+				</li>
+				<li>
+					<b>Blocked Categories:</b> Alcoholic Beverages, Casino, Contests and Shopping, Dating and Social Media, Law, Government, and Politics, Lottery and Gambling, Religion and Spirituality
+				</li>
+				<li>
+					Does not show ads rated 13+
+				</li>
+			</ul>
+		</p>
+	</section>
   </main>
 )
