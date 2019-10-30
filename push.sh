@@ -14,7 +14,10 @@ REPO=reddtoric.github.io
 # Functinos:
 Hr(){
 	echo ""
-	echo "------------------------------"
+	for ((i=0; i<20; i++))
+	do
+		printf -- "-%.0s"
+	done
 	echo ""
 }
 
