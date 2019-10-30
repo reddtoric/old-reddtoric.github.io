@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{44:function(e,a,n){"use strict";n.r(a);var t=n(0),c=n.n(t);a.default=function(){return c.a.createElement("main",null,c.a.createElement("section",{className:"center"},c.a.createElement("h2",null,"404 Not Found"),c.a.createElement("p",null,"Page not found"),c.a.createElement("img",{className:"img",src:"https://media.giphy.com/media/37jPOu6xjUzja/giphy.gif",alt:"I don't know head shake"})))}}}]);
+//# sourceMappingURL=6.682defa1.chunk.js.map
