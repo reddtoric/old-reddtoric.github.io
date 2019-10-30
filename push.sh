@@ -73,7 +73,7 @@ GitCommit(){
 }
 
 GitPush(){
-	Title "GIT PUSH --REPO \
+	Title "GIT PUSH --REPO \n
 	https://$USERNAME@github.com/$USERNAME/$REPO.git"
 	git push --repo https://$USERNAME@github.com/$USERNAME/$REPO.git
 }
