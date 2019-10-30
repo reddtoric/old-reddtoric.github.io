@@ -12,19 +12,11 @@ REPO=reddtoric.github.io
 
 
 # functinos:
-Title(){
-	echo ""
-	echo " +----------------+"
-	echo " | PUSHING TO ... |" 
-	echo " "
-	git branch
-	echo " +----------------+"
-}
-
 GitBranch(){
 	echo ""
-	echo "------------------------------"
-	echo ">>>  GIT BRANCH"
+	echo " +----------------+"
+	echo " | PUSHING TO ... |"
+	echo " +----------------+"
 	git branch
 }
 
@@ -82,7 +74,6 @@ ConfirmPush(){
 }
 
 # Main
-Title
 GitBranch
 GitAdd
 GitStatus
