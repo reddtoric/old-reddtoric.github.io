@@ -106,13 +106,16 @@ GitCommit(){
 GitPush(){
 	Title2Rows "GIT PUSH --REPO" "https://$USERNAME@github.com/$USERNAME/$REPO.git"
 	git push --repo https://$USERNAME@github.com/$USERNAME/$REPO.git
-	Title "DONE"
+	echo ""
+	Title "PUSH COMPLETED"
 }
 
 ConfirmPush(){
 	echo ">>> Continue to push? y or n"
 
 	read TOPUSH
+	
+	echo ""
 
 	if [ "$TOPUSH" = "y" ]; then
 		GitPush
