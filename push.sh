@@ -18,6 +18,8 @@ GitBranch(){
 	echo " | PUSHING TO ... |"
 	echo " +----------------+"
 	git branch
+	echo ""
+	echo "------------------------------"
 }
 
 GitAdd(){
