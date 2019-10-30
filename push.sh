@@ -14,9 +14,16 @@ REPO=reddtoric.github.io
 # functinos:
 Title(){
 	echo ""
-	echo " +-------------------+"
-	echo " | PUSHING TO MASTER |"
-	echo " +-------------------+"
+	echo " +----------------+"
+	echo " | PUSHING TO ... |"
+	echo " +----------------+"
+}
+
+GitBranch(){
+	echo ""
+	echo "------------------------------"
+	echo ">>>  GIT BRANCH"
+	git branch
 }
 
 GitAdd(){
@@ -74,6 +81,7 @@ ConfirmPush(){
 
 # Main
 Title
+GitBranch
 GitAdd
 GitStatus
 GitCommit
