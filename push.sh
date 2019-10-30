@@ -29,7 +29,7 @@ Title(){
 	TitleBar length
 }
 
-Title2(){
+Title2Rows(){
 	length=${#1}
 	length2=${#2}
 	
@@ -104,7 +104,7 @@ GitCommit(){
 }
 
 GitPush(){
-	Title2 "https://$USERNAME@github.com/$USERNAME/$REPO.git" "GIT PUSH --REPO"
+	Title2Rows "GIT PUSH --REPO" "https://$USERNAME@github.com/$USERNAME/$REPO.git"
 	git push --repo https://$USERNAME@github.com/$USERNAME/$REPO.git
 }
 
