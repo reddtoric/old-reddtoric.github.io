@@ -33,7 +33,7 @@ Title2(){
 	length=${#1}
 	length2=${#2}
 	
-	if [ length -gt length2 ]
+	if [ "$length" -gt "$length2" ]
 	then
 		TitleBar length
 		printf " | ${1} |\n"
