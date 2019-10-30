@@ -78,7 +78,7 @@ GitPush(){
 }
 
 ConfirmPush(){
-	Title "Continue to push? y or n"
+	echo ">>> Continue to push? y or n"
 
 	read TOPUSH
 
