@@ -72,6 +72,11 @@ Repeater(){
 	done
 }
 
+Info(){
+	echo "Username: ${USERNAME}"
+	echo "Repo: ${REPO}"
+}
+
 GitBranch(){
 	echo ""
 	Title "PUSHING TO ..."
@@ -129,6 +134,7 @@ ConfirmPush(){
 
 
 # Main
+Info
 GitBranch
 Hr
 GitAdd
