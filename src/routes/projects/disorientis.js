@@ -10,14 +10,31 @@ export default () => (
     <section>
       <h2>Intro</h2>
       <p>Disorientis is a single-player high-score top-down game. Using a rotary controller, you rotate to the direction you want your character to move towards and collect items and power-ups. The challenge is that the mapping of the 360 degree direction changes every few seconds.</p>
+    </section>
+	
+	<section>
+      <p>Collect food items for points. Dodge moving cars and bursting fire hydrants. All while using a tricky controller. Your character will randomly change direction and you have to adjust accordingly to move in the direction you want. The game becomes more and more difficult the more points you obtain. Compete for the highest score on the leaderboard against others. </p>
 	  <p>
-	  Will be available on the Apple App Store in the future.
+	  Features:
+		<ul>
+			<li>Challenging and unique game experience</li>
+			<li>Challenging and tricky controller/move mechanism</li>
+			<li>Interested in trolling a friend? Throw them in the game without an explanation about the controller/move mechanism</li>
+			<li>Randomly generated obstacles/map each game</li>
+			<li>Super low-poly graphics</li>
+			<li>Power-ups</li>
+			<li>Local top 10 high score board</li>
+			<li>Google Play online leaderboard</li>
+		</ul>
 	  </p>
     </section>
     
     <section>
       <h3>Available on</h3>
       <AppBadgeLink type="playstore" href="https://play.google.com/store/apps/details?id=com.eddevs.disorientis&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" />
+	  <p>
+	    Will be available on the Apple App Store in the future.
+	  </p>
     </section>
     
     <section>
