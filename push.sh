@@ -27,6 +27,7 @@ Title(){
 	TitleBar length
 	echo " | ${1} |"
 	TitleBar length
+	Repeater "a" 3
 }
 
 Title2(){
@@ -37,7 +38,6 @@ Title2(){
 	then
 		TitleBar length
 		printf " | ${1} |\n"
-		Repeater "a" 3
 		printf " | ${2} |\n"
 		TitleBar length
 
