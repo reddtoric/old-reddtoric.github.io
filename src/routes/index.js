@@ -16,13 +16,13 @@ export default () => (
       <h1 className="hidden">About</h1>
       
       <p>
-        Hi there! My name is Edward. Graduated from University of Illinois at Chicago with a BS in Computer Science. <b>I am looking for opportunities in software development.</b>
+        Hi there! I'm Edward. Graduated from the University of Illinois at Chicago with a BS in Computer Science. <b>I am looking for opportunities in software development.</b>
       </p>
       <p>
-        I love a good puzzle and challenge. I learned how to solve the Rubik's cube and several puzzles alike back in 6<sup>th</sup> grade. Also, learned how to ride a unicycle in less than 3 weeks.
+        A good puzzle and challenge is what interests me. I learned how to solve the Rubik's cube and several puzzles alike back in 6<sup>th</sup> grade. And around highschool, I learned how to ride a unicycle in about 3 weeks.
       </p>
       <p>
-        I created a quirky mobile game called Disorientis. I'm working on version 2 which will look and perform better. <Link to="/projects/disorientis">Read more...</Link>
+        Do you like a challenge yourself? Check out my quirky mobile game called Disorientis. It is currently only offered on Android. <Link to="/projects/disorientis">Read more...</Link>
       </p>
       <AppBadgeLink type="playstore" href="https://play.google.com/store/apps/details?id=com.eddevs.disorientis&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" />
       

@@ -10,9 +10,6 @@ export default () => (
     <section>
       <h2>Intro</h2>
       <p>Disorientis is a single-player high-score top-down game. Using a rotary controller, you rotate to the direction you want your character to move towards and collect items and power-ups. The challenge is that the mapping of the 360 degree direction changes every few seconds.</p>
-    </section>
-	
-	<section>
       <p>Collect food items for points. Dodge moving cars and bursting fire hydrants. All while using a tricky controller. Your character will randomly change direction and you have to adjust accordingly to move in the direction you want. The game becomes more and more difficult the more points you obtain. Compete for the highest score on the leaderboard against others. </p>
 	  <p>
 	  Features:
@@ -21,8 +18,9 @@ export default () => (
 			<li>Challenging and tricky controller/move mechanism</li>
 			<li>Interested in trolling a friend? Throw them in the game without an explanation about the controller/move mechanism</li>
 			<li>Randomly generated obstacles/map each game</li>
-			<li>Super low-poly graphics</li>
+			<li>Low-poly graphics</li>
 			<li>Power-ups</li>
+			<li>Skins (more to come)</li>
 			<li>Local top 10 high score board</li>
 			<li>Google Play online leaderboard</li>
 		</ul>
@@ -36,12 +34,31 @@ export default () => (
 	    Will be available on the Apple App Store in the future.
 	  </p>
     </section>
-    
-    <section>
-      <h2>Gameplay</h2>
-      <p>Details to come soon.</p>
-    </section>
-    
+	
+	{/*
+	<section>
+		<h2>Expected Updates</h2>
+		<ul>
+			<li>Ability to move character when finger leaves controller</li>
+		</ul>
+	</section>
+	*/}
+	<section>
+		<h2>Devlog</h2>
+		<ul>
+			<li>
+				Ver 2.0 (Dec 25, 2019)
+				<ul>
+					<li>Free snowman skin!</li>
+					<li>New and improved</li>
+					<li>Google Play sign in</li>
+					<li>Graphics Quality settings</li>
+					<li>Controller Settings</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	
     <section>
       <h2>Inspiration</h2>
       <p>Details to come soon.</p>
