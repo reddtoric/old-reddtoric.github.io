@@ -24,6 +24,7 @@ export default () => (
       <p>
         Do you like a challenge yourself? Check out my quirky mobile game called Disorientis. It is currently only offered on Android. <Link to="/projects/disorientis">Read more...</Link>
       </p>
+	  <h3>Disorientis</h3>
       <AppBadgeLink type="playstore" href="https://play.google.com/store/apps/details?id=com.eddevs.disorientis&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" />
       
     </section>

@@ -104,7 +104,7 @@ export default class App extends Component {
       <Router>
         <React.Fragment>
           <header>
-            <span className="site-title">{siteTitle}</span>
+            <a href="/" className="site-title-link"><span className="site-title">{siteTitle}</span></a>
           </header>
           
           <NavToggle showNav={this.state.showNav} handleClick={this.toggleNav} />
