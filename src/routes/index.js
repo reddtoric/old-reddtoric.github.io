@@ -34,9 +34,5 @@ export default () => (
       <IconLink iconPath={mdiGithubCircle} title="GitHub profile" href="https://github.com/reddtoric" />
       <IconLink iconPath={mdiStackOverflow} title="Stack Overflow profile" href="https://stackoverflow.com/users/6546317/reddtoric" />
     </section>
-    {/*<section>
-      <h2>Languages & Technologies</h2>
-      
-    </section>*/}
   </main>
 )
